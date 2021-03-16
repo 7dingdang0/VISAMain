@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="AOIMainApp.UserControlTestPattern"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AOIMainApp"
+             mc:Ignorable="d" FontSize="18"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFAEDCCB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="请确定相机参数:" Grid.Row="0"/>
+            <ListView Grid.Row="1" Background="#FFAEDCCB">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="相机名(ID)" DisplayMemberBinding="{Binding Path=Name}"/>
+                            <GridViewColumn Header="曝光时间" DisplayMemberBinding="{Binding Path=Exposure}"/>
+                            <GridViewColumn Header="曝光时间" DisplayMemberBinding="{Binding Path=Gain}"/>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="请确定LED灯的参数:" Grid.Row="0"/>
+            <ListView Grid.Row="1" Background="#FFAEDCCB">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="LED名(ID)" DisplayMemberBinding="{Binding Path=Name}"/>
+                            <GridViewColumn Header="亮度" DisplayMemberBinding="{Binding Path=Lightness}"/>
+                            <GridViewColumn Header="是否开启" DisplayMemberBinding="{Binding Path=Enabled}"/>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RadioButton GroupName="EnableTestPattern" Content="开启本测试画面" Grid.Row="0"/>
+            <RadioButton GroupName="EnableTestPattern" Content="不测本测试画面"  Grid.Row="1"/>
+            <TextBlock Text="发送给画面生成器(TG)的代码:" Grid.Row="2"/>
+            <TextBox x:Name="textPGCode" Grid.Row="3"/>
+            <TextBlock Text="该测试画面重复几次:" Grid.Row="4"/>
+            <TextBox x:Name="textTimes" Grid.Row="5"/>
+        </Grid>
+    </Grid>
+</UserControl>

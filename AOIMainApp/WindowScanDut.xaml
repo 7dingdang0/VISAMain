@@ -1,0 +1,34 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AOIMainApp"
+        xmlns:Model="clr-namespace:AOI.Model;assembly=AOI.Model" x:Class="AOIMainApp.WindowScanDut"
+        mc:Ignorable="d" Icon="Display.png" FontSize="20"
+        Title="产品选择" Height="350" Width="600">
+    <Grid Background="#FFAEDCCB" Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="BarCode.jpg" Grid.Column="0" Grid.Row="0"/>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+            <TextBlock Text="请放好要测试的产品，使用扫描枪扫描产品" TextWrapping="WrapWithOverflow"/>
+            <TextBlock Text="注：一旦数据库中未查到本产品型号，将使用新产品录入与配置流程" TextWrapping="WrapWithOverflow"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <TextBlock Text="手动选择产品的型号" TextWrapping="WrapWithOverflow"/>
+            <ComboBox x:Name="comboProducts" Height="40" Margin="5,0,5,0" DisplayMemberPath="Model" IsDropDownOpen="True">
+            </ComboBox>
+        </StackPanel>
+        <Button Content="手动选择产品" Grid.Row="1" Grid.Column="1" Width="180" Height="36" Background="LightGreen" Click="ButtonProductModel_Click"/>
+        <TextBlock Text="如果您确认是新产品，请点击右边的按钮，使用新产品录入与配置流程" Grid.Row="2" Grid.Column="0" TextWrapping="WrapWithOverflow"/>
+        <Button Content="新产品 --&gt;" Grid.Row="2" Grid.Column="1" Width="120" Height="36" Background="Green" Click="ButtonNewProduct_Click"/>
+    </Grid>
+</Window>
