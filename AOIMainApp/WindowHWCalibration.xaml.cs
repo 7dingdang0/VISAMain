@@ -20,6 +20,11 @@ namespace AOIMainApp
     public partial class WindowHWCalibration : Window
     {
         /// <summary>
+        /// 用户选择的产品名称
+        /// </summary>
+        public string chooseProductName { get; set; }
+
+        /// <summary>
         /// 基于产品的硬件标定流程的哪一步
         /// </summary>
         public enum Step
@@ -44,7 +49,8 @@ namespace AOIMainApp
             switch (step)
             {
                 case Step.TestPattern:
-                    PageTestPatterns pageTestPatterns = new PageTestPatterns();
+                    PageTestPatterns pageTestPatterns = new PageTestPatterns(chooseProductName);
+                    //pageTestPatterns.chooseProductName = chooseProductName;
                     this.Content = pageTestPatterns;
                     break;
             }

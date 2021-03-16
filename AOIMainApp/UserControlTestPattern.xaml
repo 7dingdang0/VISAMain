@@ -27,7 +27,7 @@
                         <GridView.Columns>
                             <GridViewColumn Header="相机名(ID)" DisplayMemberBinding="{Binding Path=Name}"/>
                             <GridViewColumn Header="曝光时间" DisplayMemberBinding="{Binding Path=Exposure}"/>
-                            <GridViewColumn Header="曝光时间" DisplayMemberBinding="{Binding Path=Gain}"/>
+                            <GridViewColumn Header="增益" DisplayMemberBinding="{Binding Path=Gain}"/>
                         </GridView.Columns>
                     </GridView>
                 </ListView.View>

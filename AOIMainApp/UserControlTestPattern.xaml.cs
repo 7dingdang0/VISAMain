@@ -24,5 +24,16 @@ namespace AOIMainApp
         {
             InitializeComponent();
         }
+
+        public UserControlTestPattern(string times,string pat,string enable)
+        {
+            InitializeComponent();
+            this.textTimes.Text = times;
+            this.textPGCode.Text = pat;
+            if ("1".Equals(enable))
+            {
+               //设置选中第一条
+            }
+        }
     }
 }

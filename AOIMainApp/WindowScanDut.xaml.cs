@@ -52,7 +52,9 @@ namespace AOIMainApp
         {
             if (this.comboProducts.SelectedItem == null)
                 return;
+            //string test = AOIConfigurations.ReadOutAllFromINI(this.comboProducts.Text);
             WindowHWCalibration windowHWCalibration = new WindowHWCalibration();
+            windowHWCalibration.chooseProductName = this.comboProducts.Text;           //传递用户选择的产品名称
             windowHWCalibration.Show();
             windowHWCalibration.GoToStep(WindowHWCalibration.Step.TestPattern);
             this.Close();

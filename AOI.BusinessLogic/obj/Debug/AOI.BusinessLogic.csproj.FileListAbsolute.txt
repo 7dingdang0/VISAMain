@@ -7,3 +7,12 @@ D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.BusinessLo
 D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.csproj.CopyComplete
 D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.dll
 D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.pdb
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\bin\Debug\AOI.BusinessLogic.dll
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\bin\Debug\AOI.BusinessLogic.pdb
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\bin\Debug\AOI.Model.dll
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\bin\Debug\AOI.Model.pdb
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.csprojAssemblyReference.cache
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.csproj.CopyComplete
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.dll
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.BusinessLogic\obj\Debug\AOI.BusinessLogic.pdb

@@ -4,3 +4,9 @@ D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.Model\obj\
 D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.Model\obj\Debug\AOI.Model.csproj.CoreCompileInputs.cache
 D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.Model\obj\Debug\AOI.Model.dll
 D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOI.Model\obj\Debug\AOI.Model.pdb
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.Model\bin\Debug\AOI.Model.dll
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.Model\bin\Debug\AOI.Model.pdb
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.Model\obj\Debug\AOI.Model.csprojAssemblyReference.cache
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.Model\obj\Debug\AOI.Model.csproj.CoreCompileInputs.cache
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.Model\obj\Debug\AOI.Model.dll
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOI.Model\obj\Debug\AOI.Model.pdb

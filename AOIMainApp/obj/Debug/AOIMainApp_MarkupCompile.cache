@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOIMainApp\obj\Debug\
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOIMainApp\obj\Debug\
 AOIMainApp
 none
 false
 DEBUG;TRACE
-D:\project\屏幕自动光学检测系统\project\AOIMainApp_0315\AOIMainApp\App.xaml
+D:\project\屏幕自动光学检测系统\project\Git\VISANEW\AOIMainApp\App.xaml
 61232359938
 
 10-799063693
-15564562466
+151235006850
 MainWindow.xaml;PageTestPatterns.xaml;UserControlTestPattern.xaml;WindowHWCalibration.xaml;WindowNewProduct.xaml;WindowScanDut.xaml;
 
 False

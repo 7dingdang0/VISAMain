@@ -18,7 +18,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="待测画面列表" Grid.Row="0" Grid.Column="0"/>
-        <ListBox x:Name="listAllTestPatterns"  Grid.Row="1" Grid.Column="0"/>
+        <ListBox x:Name="listAllTestPatterns"  Grid.Row="1" Grid.Column="0" Margin="0,0.4,0,24.6" SelectionChanged="SelectProduct_SelectionChanged">
+        </ListBox>
         <StackPanel  Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
             <TextBlock Text="{Binding ElementName=listAllTestPatterns, Path=SelectedValue}"/>
             <Button Content="创建新画面" Width="180" Height="36" Background="Green" Margin="20,2,2,2"/>
