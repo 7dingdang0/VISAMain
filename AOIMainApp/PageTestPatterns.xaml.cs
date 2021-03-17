@@ -1,4 +1,9 @@
-﻿using AOI.BusinessLogic;
+﻿/***********************************************************************************
+ *              AOI (Automatic Optical Inspector) 自动光学检测系统                
+ *              UI 层的测试画面的 Page
+ *              2021/3/16 (Copyright statement here 版权信息待定) Author: Patrick  
+ **********************************************************************************/
+using AOI.BusinessLogic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,6 +84,35 @@ namespace AOIMainApp
             string pat = AOIConfigurations.ReadOutSingleNodeByKey(chooseProductName, NodeName, "PAT", "enable");
             string enable = AOIConfigurations.ReadOutSingleNodeByKey(chooseProductName, NodeName, "enable", "enable");
             UserControlTestPattern userControlTestPattern = new UserControlTestPattern(times, pat, enable);
+        }
+
+        /// <summary>
+        /// 下一步(四角图相机设置)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonNext_Click(object sender, RoutedEventArgs e)
+        {
+            WindowHWCalibration windowHWCalibration = Window.GetWindow(this) as WindowHWCalibration;
+            windowHWCalibration.GoToStep(WindowHWCalibration.Step.FourCorner);
+        }
+
+        /// <summary>
+        /// 退出，提示一下比较好
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonClose_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show(
+                "您确认要退出本程序吗？一旦确定将关闭本程序，下次进行 AOI 请重新运行本程序。",
+                "您确认要退出本程序吗?",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                Window.GetWindow(this).Close();
+                return;
+            }
         }
     }
 }

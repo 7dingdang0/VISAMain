@@ -23,6 +23,8 @@
         <StackPanel  Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
             <TextBlock Text="{Binding ElementName=listAllTestPatterns, Path=SelectedValue}"/>
             <Button Content="创建新画面" Width="180" Height="36" Background="Green" Margin="20,2,2,2"/>
+            <Button Content="下一步(四角图相机设置)" Width="220" Height="36" Background="Green" Margin="20,2,2,2" Click="ButtonNext_Click"/>
+            <Button Content="退出" Width="80" Height="36" Background="Red" Margin="20,2,2,2" Click="ButtonClose_Click"/>
         </StackPanel>
         <local:UserControlTestPattern x:Name="userControlSelectedTestPattern" Grid.Column="1" Grid.Row="1"/>
     </Grid>

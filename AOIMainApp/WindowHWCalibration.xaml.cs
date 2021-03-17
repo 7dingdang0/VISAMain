@@ -1,4 +1,9 @@
-﻿using System;
+﻿/***********************************************************************************
+ *              AOI (Automatic Optical Inspector) 自动光学检测系统                
+ *              UI 层的硬件标定的主窗口，内部包含很多 Pages
+ *              2021/3/16 (Copyright statement here 版权信息待定) Author: Patrick  
+ **********************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +37,17 @@ namespace AOIMainApp
             /// <summary>
             /// 每个测试画面及其相机等的设置
             /// </summary>
-            TestPattern
+            TestPattern,
+
+            /// <summary>
+            /// 四角图各相机起始拍摄参数设置
+            /// </summary>
+            FourCorner,
+
+            /// <summary>
+            /// 棋盘图各相机起始拍摄参数
+            /// </summary>
+            CheckerBoard
         }
 
         public WindowHWCalibration()
@@ -50,8 +65,17 @@ namespace AOIMainApp
             {
                 case Step.TestPattern:
                     PageTestPatterns pageTestPatterns = new PageTestPatterns(chooseProductName);
-                    //pageTestPatterns.chooseProductName = chooseProductName;
                     this.Content = pageTestPatterns;
+                    break;
+
+                case Step.FourCorner:
+                    PageFourCornerSettings pageFourCornerSettings = new PageFourCornerSettings();
+                    this.Content = pageFourCornerSettings;
+                    break;
+
+                case Step.CheckerBoard:
+                    //PageTestPatterns pageTestPatterns = new PageTestPatterns();
+                    //this.Content = pageTestPatterns;
                     break;
             }
         }
